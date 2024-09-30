@@ -1,0 +1,9 @@
+.not-found{
+    background-color: aquamarine;
+    font-family: 'roboto';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30%;
+    height: 40vh;
+    padding-top: 80px;
+}

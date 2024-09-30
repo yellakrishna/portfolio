@@ -1,0 +1,95 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12px;
+    margin-top: 80px;
+    padding-bottom: 160px;
+    
+  }
+  .yellaImg{
+    height: 370px;
+    width: 400px;
+    border-radius: 5%;
+    
+  }
+  .yellaImg {
+    display: inline-block;
+    animation: up-down 5s ease-in-out infinite;
+  }
+  
+  @keyframes up-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+  }
+  .heading p{
+    font-size: 20px;
+    color: gray;
+  
+  }
+  .heading h1{
+    font-size: 55px;
+    font-variant: small-caps;
+   
+  }
+  .button{
+    margin-right: 500px;
+    box-shadow: 5px 0px 10px 5px rgb(104, 86, 86);
+    position: absolute;
+    top: 480px;
+    left: 300px;
+  }
+  
+  
+  .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  @media  screen and (max-width:764px) {
+    .home-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4px;
+      padding-bottom:50px ;
+      margin: 16px;
+    }
+    .yellaImg{
+      order: 2;
+      z-index: -1;
+      height: 270px;
+    width: 350px;
+    border-radius: 5%;
+    padding: 12px;
+    margin-top: 6px;
+    }
+    .button{
+      display: none;
+    }
+    .heading{
+      padding-left: 16px;
+    }
+    .social{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+  }
+  
+  
+  
+  
+  

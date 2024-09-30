@@ -1,0 +1,54 @@
+ul li{
+    list-style: none;
+    box-shadow: 5px 8px 10px 8px rgb(54, 53, 53);
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+ul li:hover{
+    background-color: #eff1e4;
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+ul{
+    display: grid;                /* Enable grid layout */
+      grid-template-columns:  auto auto auto; 
+      justify-content: space-around; /* Create 3 equal columns */
+      gap: 10px;                    /* Add space between grid items */
+      padding: 10px;
+   
+
+}
+ul p{
+    font-size: medium;
+    font-weight:bold ;
+    font-family: 'roboto';
+    color: rgb(57, 14, 97);
+    margin-top: 9px;
+    background-color: antiquewhite;
+}
+ul button{
+    width: 160px;
+    
+    margin: 12px;
+    margin-right: 40px;
+}
+ul h5{
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: bold;
+    color: rgb(220, 85, 186);
+    padding-top: 4px;
+}
+
+@media screen and (max-width:760px) {
+   ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+}

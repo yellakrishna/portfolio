@@ -1,0 +1,88 @@
+.nav-container {
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 9px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 15px;
+  }
+  nav NavLink{
+    align-items: center;
+    justify-content: center;
+  }
+  nav a.active {
+    font-weight: 500;
+    color: black;
+  }
+  nav a {
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .nav-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  nav {
+    margin-left: 400px;
+  }
+  .responsive_nav {
+    transform: none;
+  }
+  @media screen and (max-width: 764px) {
+    .nav-btn {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      flex-direction: column;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #f0ffff;
+      transition: 1s;
+      transform: translateX(50vh);
+      border-bottom-left-radius: 16px;
+      font-size: 25px;
+      font-weight: bold;
+      
+    }
+    nav a:hover {
+      color: #ceec22;
+    }
+    .responsive_nav {
+      transform: none;
+    }
+    nav a.active {
+      font-weight: bold;
+      color: rgb(10, 108, 28);
+    }
+    nav a {
+      padding: 0px;
+    }
+    .nav-close-btn {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      padding-top: 0px;
+  
+      color: rgb(243, 7, 7);
+    }
+  }
+  
