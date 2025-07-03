@@ -7,3 +7,10 @@
     height: 40vh;
     padding-top: 80px;
 }
+
+@media screen and (max-width:960px){
+    .not-found{
+        margin: 30px;
+        text-align: center;
+    }
+}

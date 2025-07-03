@@ -18,15 +18,24 @@
     border: 1px solid rosybrown;
     border-radius: 40%;
     height: 300px;
-    width: 400px;
+    width: 600px;
    
 }
 .aboutHeading{
-    font-size: 30px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 30px;
+    padding-left: 15px;
 }
 .aboutImg {
     display: inline-block;
     animation: left-right 2s ease-in-out infinite;
+}
+.aboutHeading span {
+    color: #ff6347; /* Tomato color */
+    font-weight: bold;
+    font-size: 24px;
 }
 
 @keyframes left-right {
@@ -46,8 +55,31 @@
     }
     .imgContainer{
         margin-top: 10px;
+        margin: 20px;
+        text-align: center;
     }
     .aboutHeading{
         margin-top: 20px;
+        margin: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1030px){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgContainer{
+        margin-top: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+    .aboutHeading{
+        margin-top: 20px;
+        margin: 30px;
+        text-align: center;
     }
 }

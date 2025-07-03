@@ -43,12 +43,39 @@ ul h5{
     padding-top: 4px;
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:960px) {
    ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
    }
 
+   ul{
+    display: grid;                /* Enable grid layout */
+      grid-template-columns:  auto  ; 
+      justify-content: space-around; /* Create 3 equal columns */
+      gap: 10px;                    /* Add space between grid items */
+      padding: 10px;
+   
+
 }
+  
+
+}
+
+
+/* @media screen and (max-width:960px) {
+    
+    ul{
+     display: grid;               
+       grid-template-columns:  auto auto ; 
+       justify-content: space-around;
+       gap: 10px;                    
+       padding: 10px;
+    
+ 
+ }
+ 
+ } */

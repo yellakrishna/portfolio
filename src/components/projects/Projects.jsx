@@ -10,6 +10,13 @@ const data = [
     name: "HTML , CSS , Javascript , React",
     head: "Fishing-Marketing",
   },
+    {
+    id: 1,
+    imgUrl: "./images/Screenshot(32).png",
+    href: "https://frontend-fish-delivery.vercel.app/",
+    name: "HTML , CSS , Javascript , React",
+    head: "Fishing-Marketing",
+  },
   {
     id: 2,
     imgUrl: "./images/portfolio.png",

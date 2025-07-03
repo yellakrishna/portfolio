@@ -35,7 +35,7 @@ const Home = () => {
        
         <div className="heading mr-5">
           <h1 className="">Yella krishna</h1>
-          <h5>______Web developer</h5>
+          <h5>______MERN STACK DEVELOPER</h5>
           <p>
             A Web Developer from Alampur. I build dynamic,
             <br /> intuitive websites with a focus on creativity.

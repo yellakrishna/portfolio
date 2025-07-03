@@ -14,11 +14,11 @@ const Navbar = () => {
   };
   return (
     <div className="nav-container">
-    <img
+   <NavLink to="/"> <img
       src="yellakrishna.jpg"
       alt="fish2"
       style={{ height: 40, width: 50, borderRadius:50 }}
-    />
+    /> </NavLink>
 
 <nav ref={navRef}>
         <NavLink to="/">Home</NavLink>
@@ -27,6 +27,8 @@ const Navbar = () => {
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/login">Login</NavLink>
+        <NavLink to="/register">Register</NavLink>
+       
         <NavLink to="*"></NavLink>
         
        
