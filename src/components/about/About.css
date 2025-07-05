@@ -9,7 +9,7 @@
   
 }
 .imgContainer{
-    margin-top: 80px;
+    margin-top: 20px;
 }
 .heading{
     margin-top: 40px;
@@ -17,8 +17,8 @@
 .aboutImg{
     border: 1px solid rosybrown;
     border-radius: 40%;
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
    
 }
 .aboutHeading{
@@ -26,7 +26,9 @@
     font-style: italic;
     font-weight: bold;
     padding: 30px;
-    padding-left: 15px;
+       margin-top: 40px;
+    border: 2px solid #ff6347; /* Tomato color */
+    text-align: center;
 }
 .aboutImg {
     display: inline-block;
@@ -55,13 +57,21 @@
     }
     .imgContainer{
         margin-top: 10px;
-        margin: 20px;
+        margin: 0px;
         text-align: center;
+        
     }
+    .aboutImg {
+        border: 1px solid rosybrown;
+        border-radius: 40%;
+        height: 200px;
+        width: 300px;
+}
     .aboutHeading{
-        margin-top: 20px;
-        margin: 30px;
+      
+        margin: 10px;
         text-align: center;
+        font-size: 12px;
     }
 }
 

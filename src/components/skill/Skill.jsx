@@ -12,7 +12,9 @@ import "./Skill.css";
 const Skills = () => {
   return (
     <>
-      <h1 className="text-center mt-4 skill">Skills</h1>
+      
+      <h1 style={{textAlign:"center",background:"lightGray", padding:10,fontFamily:"roboto",fontWeight:"bold",fontVariant:"small-caps"}}>Skills</h1>
+   
       <div className="skillContainer">
         <div className="frontend">
           <h4>Frontend Developer</h4>
@@ -63,19 +65,64 @@ const Skills = () => {
 
           <div className="miniBoxs">
           <p>
-          <GrMysql /> Sql
+          <GrMysql /> Firebase
           </p>
           </div>
 
           <div className="miniBoxs">
           <p>
-          <SiMongodb /> Mongodb
+          <SiMongodb /> MongoDB
           </p>
           </div>
         
         </div>
       </div>
+
+
+              <div className="frontend">
+          <h4>Tools & Deployments </h4>
+          <div className="boxContainer">
+            <div className="miniBoxs">
+          <p>
+          <SiMongodb /> Github
+          </p>
+          </div>
+
+          <div className="miniBoxs">
+          <p>
+          <RiNodejsLine /> Git 
+          </p>
+          </div>
+
+          <div className="miniBoxs">
+          <p>
+          <SiExpress /> Postman
+          </p>
+          </div>
+
+          <div className="miniBoxs">
+          <p>
+          <GrMysql /> Varcel
+          </p>
+          </div>
+
+          <div className="miniBoxs">
+          <p>
+          <SiMongodb /> Netlify
+          </p>
+          </div>
+          <div className="miniBoxs">
+          <p>
+          <SiMongodb /> Render
+          </p>
+          </div>
+         
+        
+        </div>
       </div>
+      
+      </div>
+  
     </>
   );
 };

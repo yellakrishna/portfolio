@@ -23,6 +23,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .miniBox {
     height: 50px;

@@ -3,22 +3,27 @@ import "./Project.css";
 import { FaGithub } from 'react-icons/fa';
 
 const data = [
-  {
-    id: 1,
-    imgUrl: "./images/onlineFish.png",
-    href: "https://online-fish-market-alampur.netlify.app/",
-    name: "HTML , CSS , Javascript , React",
-    head: "Fishing-Marketing",
-  },
+
     {
     id: 1,
-    imgUrl: "./images/Screenshot(32).png",
+    imgUrl: "./images/Screenshot (32).png",
     href: "https://frontend-fish-delivery.vercel.app/",
-    name: "HTML , CSS , Javascript , React",
-    head: "Fishing-Marketing",
+    name: "React , Node , Express , MongoDB , Tailwind CSS",
+    head: "Smart Fish Delivery Web App ",
   },
+
+  
+  
   {
     id: 2,
+    imgUrl: "./images/Screenshot (33).png",
+    href: "https://blog-frontend-chi-henna.vercel.app/",
+    name: " React , Node , Express , MongoDB ,Bootstrap",
+    head: "Portfolio",
+  },
+
+  {
+    id: 3,
     imgUrl: "./images/portfolio.png",
     href: "https://portfolio-yella.netlify.app/",
     name: "HTML , CSS , Javascript , React",
@@ -38,12 +43,20 @@ const data = [
     name: "HTML , CSS , Javascript ",
     head: "Calculator",
   },
+
   {
     id: 5,
     imgUrl: "./images/todolist.png",
     href: "https://yella-todolist.netlify.app/",
     name: "HTML , CSS , Javascript ",
     head: "Todolist",
+  },
+    {
+    id: 6,
+    imgUrl: "./images/onlineFish.png",
+    href: "https://online-fish-market-alampur.netlify.app/",
+    name: "HTML , CSS , Javascript , React",
+    head: "Fishing-Marketing",
   },
 ];
 
@@ -74,7 +87,7 @@ const Projects = () => {
                     <img
                       src={imgUrl}
                       alt="fish"
-                      style={{ height: 120, width: 350 }}
+                      style={{ height: 110, width: 290 }}
                     />
                   </a>
                 </div>
@@ -88,7 +101,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={40} color="black" />
+                  <FaGithub size={30} color="black" />
                 </a>
               </div>
             </li>

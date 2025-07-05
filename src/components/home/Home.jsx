@@ -11,6 +11,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "../about/About";
 import Contact from "../contact/Contact";
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import Skills from "../skill/Skill";
+import Projects from "../projects/Projects";
 
 const Home = () => {
   return (
@@ -35,7 +37,7 @@ const Home = () => {
        
         <div className="heading mr-5">
           <h1 className="">Yella krishna</h1>
-          <h5>______MERN STACK DEVELOPER</h5>
+          <h5>____MERN STACK DEVELOPER</h5>
           <p>
             A Web Developer from Alampur. I build dynamic,
             <br /> intuitive websites with a focus on creativity.
@@ -46,9 +48,11 @@ const Home = () => {
           <img src="yellakrishna.jpg" alt="yella" className="yellaImg" />
         </div>
       </div>
-      <button className="button btn btn-success mb-2">Say Hello!</button>
+      {/* <button className="button btn btn-success mb-2">Say Hello!</button> */}
 
       <About />
+      <Skills/>
+      <Projects/>
       <Contact />
     </>
   );
