@@ -55,6 +55,22 @@
     background-color: #eff1e4;
     transform: scale(1.1); /* Slightly enlarges the button */
 }
+
+  .miniBoxss {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(234, 162, 220, 0.849);
+    text-align: center;
+    padding-top: 14px;
+    box-shadow: 5px 0px 10px 5px rgb(35, 33, 33);
+    margin: 10px;
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .miniBoxss:hover{
+    background-color: #eff1e4;
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
   .boxContainer {
     display: flex;
     flex-direction: row;

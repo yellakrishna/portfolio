@@ -82,38 +82,38 @@ const Skills = () => {
               <div className="frontend">
           <h4>Tools & Deployments </h4>
           <div className="boxContainer">
-            <div className="miniBoxs">
+            <div className="miniBoxss">
           <p>
-          <SiMongodb /> Github
+           Github
           </p>
           </div>
 
-          <div className="miniBoxs">
+          <div className="miniBoxss">
           <p>
-          <RiNodejsLine /> Git 
+           Git 
           </p>
           </div>
 
-          <div className="miniBoxs">
+          <div className="miniBoxss">
           <p>
-          <SiExpress /> Postman
+           Postman
           </p>
           </div>
 
-          <div className="miniBoxs">
+          <div className="miniBoxss">
           <p>
-          <GrMysql /> Varcel
+           Varcel
           </p>
           </div>
 
-          <div className="miniBoxs">
+          <div className="miniBoxss">
           <p>
           <SiMongodb /> Netlify
           </p>
           </div>
-          <div className="miniBoxs">
+          <div className="miniBoxss">
           <p>
-          <SiMongodb /> Render
+           Render
           </p>
           </div>
          
