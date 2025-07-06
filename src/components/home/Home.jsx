@@ -39,7 +39,7 @@ const Home = () => {
           <h1 className="">Yella krishna</h1>
           <h5>____MERN STACK DEVELOPER</h5>
           <p>
-            I build creative, user-friendly web applications using the MERN stack.
+            I’m a MERN Stack Developer who builds dynamic <br/>and intuitive websites with a focus on creativity.
             
           </p>
         </div>
