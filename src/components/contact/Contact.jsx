@@ -4,6 +4,21 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const Contact = () => {
+  
+  const handle = (e) => {
+    e.preventDefault();
+  
+    let obj = {
+      name: e.target[0].value,
+      email: e.target[1].value,
+      message: e.target[2].value
+    }
+    console.log(obj)
+    e.target[0].value = "";
+    e.target[1].value = "";     
+    e.target[2].value = "";     
+  
+  }
   return (
     <>
    <section style={styles.section}>
@@ -19,7 +34,7 @@ const Contact = () => {
         </div> */}
 
         {/* Message Form */}
-        <form style={styles.form}>
+        <form onSubmit={handle} style={styles.form}>
           <input type="text" placeholder="Your Name" style={styles.input} />
           <input type="email" placeholder="Your Email" style={styles.input} />
           <textarea placeholder="Your Message" style={styles.textarea}></textarea>
