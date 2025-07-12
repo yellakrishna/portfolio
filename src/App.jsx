@@ -13,18 +13,20 @@ import NotFound from "./components/notfound/NotFound";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import Footer from "./components/footer/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
     <>
-
+<HelmetProvider>
      <Helmet>
         <title>Yella Krishna | MERN Stack Developer</title>
         <meta name="description" content="Yella Krishna is a MERN Stack Developer building scalable full-stack web applications using React, Node.js, Express, and MongoDB." />
         <meta name="keywords" content="MERN, React, Node.js, Developer, Portfolio, Yella Krishna" />
         <meta name="author" content="Yella Krishna" />
       </Helmet>
+      </HelmetProvider>
+
       <div className="App">
         
         <Navbar />
