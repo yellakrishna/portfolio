@@ -55,14 +55,14 @@ const data = [
   },
 
   {
-    id: 5,
+    id: 7,
     imgUrl: "./images/todolist.png",
     href: "https://yella-todolist.netlify.app/",
     name: "HTML , CSS , Javascript ",
     head: "Todolist",
   },
     {
-    id: 6,
+    id: 8,
     imgUrl: "./images/onlineFish.png",
     href: "https://online-fish-market-alampur.netlify.app/",
     name: "HTML , CSS , Javascript , React",

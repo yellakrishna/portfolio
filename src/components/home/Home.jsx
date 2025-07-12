@@ -36,8 +36,8 @@ const Home = () => {
       </a>
     </div>
        
-        <div className="heading mr-5">
-          <h1 className="">Yella krishna</h1>
+        <div className="heading ">
+          <h1>Hello, I'm <span>Yella Krishna</span></h1>
           <h5>____MERN STACK DEVELOPER</h5>
           <p>
             I’m a MERN Stack Developer who builds dynamic <br/>and intuitive websites with a focus on creativity.

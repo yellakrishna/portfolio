@@ -1,90 +1,136 @@
+/* === NAVBAR CONTAINER === */
 .nav-container {
-    background-color: #f0f8ff;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* === LOGO === */
+.nav-container img {
+  height: 40px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* === DESKTOP NAV === */
+.desktop-nav {
+  display: flex;
+  gap: 30px;
+  padding-right: 90px;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.desktop-nav a.active {
+  color: #facc15;
+}
+
+.desktop-nav a:hover {
+  color: #0ea5e9;
+}
+
+/* === HAMBURGER === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #0f172a;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* === MOBILE MENU (RIGHT SLIDE-IN) === */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(8px);
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 100px 20px 40px;
+  gap: 24px;
+}
+
+.mobile-menu.active {
+  transform: translateX(0%);
+}
+
+.mobile-menu a {
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: #facc15;
+}
+
+/* === OVERLAY === */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.3);
+  z-index: 999;
+}
+
+/* === RESPONSIVE RULES === */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-    padding: 9px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    font-size: 15px;
   }
-  nav NavLink{
-    align-items: center;
-    justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .mobile-menu,
+  .hamburger,
+  .overlay {
+    display: none;
   }
-  nav a.active {
-    font-weight: 500;
-    color: black;
+
+  .desktop-nav {
+    display: flex;
   }
-  nav a {
-    text-decoration: none;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .nav-btn {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    visibility: hidden;
-    opacity: 0;
-  }
-  nav {
-    margin-left: 400px;
-  }
-  .responsive_nav {
-    transform: none;
-  }
-  @media screen and (max-width: 764px) {
-    .nav-btn {
-      visibility: visible;
-      opacity: 2;
-    }
-    
-    nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: auto;
-      width: 50%;
-      flex-direction: column;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      background-color: #f0ffff;
-      /* transition: 1s; */
-      transition:background-color 0.5s ease;
-      transform: translateX(50vh);
-      border-bottom-left-radius: 16px;
-      font-size: 25px;
-      font-weight: bold;
-      padding-top: 30px;
-      
-    }
-    nav a:hover {
-      color: #ceec22;
-    }
-    .responsive_nav {
-      transform: none;
-    }
-    nav a.active {
-      font-weight: bold;
-      color: rgb(10, 108, 28);
-    }
-    nav a {
-      padding: 0px;
-    }
-    .nav-close-btn {
-      position: fixed;
-      top: 0px;
-      right: 15px;
-      padding-top: 0px;
-  
-      color: rgb(203, 35, 35);
-    }
-  }
-  
+}

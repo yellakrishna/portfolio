@@ -41,6 +41,8 @@ const Contact = () => {
           <button type="submit" style={styles.button}>Send Message</button>
         </form>
       </div>
+
+      
     </section>
     </>
   )

@@ -1,6 +1,7 @@
 .skill {
     font-variant: small-caps;
   }
+  
   .frontend {
     width: 500px;
     height: 300px;
@@ -24,6 +25,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
   }
   .miniBox {
     height: 50px;

@@ -12,10 +12,19 @@ import Contact from "./components/contact/Contact";
 import NotFound from "./components/notfound/NotFound";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
+import Footer from "./components/footer/Footer";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <>
+
+     <Helmet>
+        <title>Yella Krishna | MERN Stack Developer</title>
+        <meta name="description" content="Yella Krishna is a MERN Stack Developer building scalable full-stack web applications using React, Node.js, Express, and MongoDB." />
+        <meta name="keywords" content="MERN, React, Node.js, Developer, Portfolio, Yella Krishna" />
+        <meta name="author" content="Yella Krishna" />
+      </Helmet>
       <div className="App">
         
         <Navbar />
@@ -30,6 +39,7 @@ function App() {
           <Route path="/register" element={<Register />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer/>
       </div>
     </>
   );

@@ -1,47 +1,53 @@
-import React from 'react'
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import "./Navbar.css";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import "./Navbar.css";
 
 const Navbar = () => {
-    
-    const navRef = useRef();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <div className="nav-container">
-   <NavLink to="/"> <img
-      src="yellakrishna.jpg"
-      alt="fish2"
-      style={{ height: 40, width: 50, borderRadius:50 }}
-    /> </NavLink>
+      {/* Logo */}
+      <NavLink to="/">
+        <img
+          src="yellakrishna.jpg"
+          alt="logo"
+          className="logo"
+        />
+      </NavLink>
 
-<nav ref={navRef}>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-        {/* <NavLink to="/login">Login</NavLink>
-        <NavLink to="/register">Register</NavLink> */}
-       
-        <NavLink to="*"></NavLink>
-        
-       
-        
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
-      </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars />
-      </button>
+      {/* Desktop Nav */}
+      <div className="desktop-nav">
+        <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+        <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+        <NavLink to="/skills" onClick={closeMenu}>Skills</NavLink>
+        <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
+        <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+      </div>
+
+      {/* Hamburger Icon */}
+      <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Mobile Slide-In Menu */}
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+        <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+        <NavLink to="/skills" onClick={closeMenu}>Skills</NavLink>
+        <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
+        <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+      </div>
+
+      {/* Dark Overlay */}
+      {menuOpen && <div className="overlay" onClick={closeMenu}></div>}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
