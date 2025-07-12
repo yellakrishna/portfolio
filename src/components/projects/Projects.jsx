@@ -4,8 +4,16 @@ import { FaGithub } from 'react-icons/fa';
 
 const data = [
 
-    {
+
+  {
     id: 1,
+    imgUrl: "./images/portfolio.png",
+    href: "https://portfolio-yella.netlify.app/",
+    name: "HTML , CSS , Javascript , React",
+    head: "Portfolio",
+  },
+    {
+    id: 2,
     imgUrl: "./images/Screenshot (32).png",
     href: "https://frontend-fish-delivery.vercel.app/",
     name: "React , Node , Express , MongoDB , Tailwind CSS",
@@ -15,29 +23,31 @@ const data = [
   
   
   {
-    id: 2,
+    id: 3,
     imgUrl: "./images/Screenshot (33).png",
     href: "https://blog-frontend-chi-henna.vercel.app/",
     name: " React , Node , Express , MongoDB ,Bootstrap",
-    head: "Portfolio",
+    head: "Blog App",
   },
 
+  
+
   {
-    id: 3,
-    imgUrl: "./images/portfolio.png",
-    href: "https://portfolio-yella.netlify.app/",
+    id: 4,
+    imgUrl: "./images/Screenshot (38).png",
+    href: "https://swift-dashboard-assignment-peach.vercel.app/",
     name: "HTML , CSS , Javascript , React",
-    head: "Portfolio",
+    head: "swift-dashboard-Assignment",
   },
   {
-    id: 3,
+    id: 5,
     imgUrl: "./images/input.png",
     href: "https://user-input-search.netlify.app/",
     name: "HTML , CSS , Javascript , React",
     head: "InputSeacher",
   },
   {
-    id: 4,
+    id: 6,
     imgUrl: "./images/calculator.png",
     href: "https://calculator-react123.netlify.app/",
     name: "HTML , CSS , Javascript ",

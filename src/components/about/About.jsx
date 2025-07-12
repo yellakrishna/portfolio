@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import DownloadCV from '../cv/DownloadCV'
 
 const About = () => {
   return (
@@ -20,8 +21,9 @@ Despite having a career gap, I’ve spent my time consistently improving my skil
 
 My goal is to become a successful software developer, contribute to meaningful projects, and grow in a challenging environment. I’m also exploring AI integrations in web apps to stay ahead in the evolving tech landscape.
       </p>
-
+<DownloadCV/>
       </div>
+      
       </div>
     </div>
     </>

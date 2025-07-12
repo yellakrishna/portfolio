@@ -13,6 +13,7 @@ import Contact from "../contact/Contact";
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import Skills from "../skill/Skill";
 import Projects from "../projects/Projects";
+import DownloadCV from "../cv/DownloadCV";
 
 const Home = () => {
   return (
@@ -42,12 +43,15 @@ const Home = () => {
             I’m a MERN Stack Developer who builds dynamic <br/>and intuitive websites with a focus on creativity.
             
           </p>
+          <DownloadCV/>
         </div>
         <div>
           <img src="yellakrishna.jpg" alt="yella" className="yellaImg" />
         </div>
       </div>
       {/* <button className="button btn btn-success mb-2">Say Hello!</button> */}
+
+
 
       <About />
       <Skills/>
