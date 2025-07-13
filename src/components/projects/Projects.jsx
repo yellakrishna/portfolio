@@ -104,14 +104,16 @@ const Projects = () => {
 
                 <p>{name}</p>
                 <a href={href}>
-                  <button className="btn btn-info">Demo</button>
+                  <button className="btn btn-info">Live</button>
                 </a>
                 <a
                   href="https://github.com/yellakrishna"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  
                   <FaGithub size={30} color="black" />
+                 
                 </a>
               </div>
             </li>
