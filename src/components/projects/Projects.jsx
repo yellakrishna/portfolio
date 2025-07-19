@@ -12,25 +12,22 @@ const data = [
     name: "HTML , CSS , Javascript , React",
     head: "Portfolio",
   },
-    {
+
+      {
     id: 2,
+    imgUrl: "./images/Screenshot (43).png",
+    href: "https://new-blog-4yfp.vercel.app/",
+    name: "React , Node , Express , MongoDB , CSS",
+    head: "Blog App ",
+  },
+    {
+    id: 3,
     imgUrl: "./images/Screenshot (32).png",
     href: "https://frontend-fish-delivery.vercel.app/",
     name: "React , Node , Express , MongoDB , Tailwind CSS",
     head: "Smart Fish Delivery Web App ",
   },
 
-  
-  
-  {
-    id: 3,
-    imgUrl: "./images/Screenshot (33).png",
-    href: "https://blog-frontend-chi-henna.vercel.app/",
-    name: " React , Node , Express , MongoDB ,Bootstrap",
-    head: "Blog App",
-  },
-
-  
 
   {
     id: 4,
