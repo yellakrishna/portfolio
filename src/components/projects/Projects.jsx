@@ -17,7 +17,7 @@ const data = [
     id: 2,
     imgUrl: "./images/Screenshot (43).png",
     href: "https://new-blog-4yfp.vercel.app/",
-    name: "React , Node , Express , MongoDB , CSS",
+    name: "   React , Node , Express , MongoDB , CSS   ",
     head: "Blog App ",
   },
     {
