@@ -90,9 +90,9 @@
     .yellaImg{
       order: 2;
       z-index: -1;
-      height: 220px;
-    width: 280px;
-    border-radius: 5%;
+      height: 250px;
+    width: 300px;
+    border-radius: 25%;
     padding: 12px;
     margin-top: 0px;
     }
