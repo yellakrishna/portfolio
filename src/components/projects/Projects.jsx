@@ -38,13 +38,7 @@ const data = [
     name: "HTML, CSS, JavaScript, React",
     head: "Input Search",
   },
-  {
-    id: 6,
-    imgUrl: "./images/calculator.png",
-    href: "https://calculator-react123.netlify.app/",
-    name: "HTML, CSS, JavaScript",
-    head: "Calculator",
-  },
+  
   {
     id: 7,
     imgUrl: "./images/todolist.png",
@@ -52,13 +46,7 @@ const data = [
     name: "HTML, CSS, JavaScript",
     head: "To-do List",
   },
-  {
-    id: 8,
-    imgUrl: "./images/onlineFish.png",
-    href: "https://online-fish-market-alampur.netlify.app/",
-    name: "HTML, CSS, JavaScript, React",
-    head: "Fishing Market",
-  },
+  
 ];
 
 const Projects = () => {
