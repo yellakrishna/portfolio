@@ -1,129 +1,54 @@
+// Skills.jsx
 import React from "react";
 import { FaHtml5 } from "react-icons/fa6";
 import { DiCss3 } from "react-icons/di";
 import { BiLogoJavascript } from "react-icons/bi";
-import { RiReactjsFill } from "react-icons/ri";
-
-import { RiNodejsLine } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
+import { RiReactjsFill, RiNodejsLine } from "react-icons/ri";
+import { SiExpress, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
-import { SiMongodb } from "react-icons/si";
 import "./Skill.css";
+
 const Skills = () => {
   return (
-    <>
-      
-      <h1 style={{textAlign:"center",background:"lightGray", padding:10,fontFamily:"roboto",fontWeight:"bold",fontVariant:"small-caps"}}>Skills</h1>
-   
-      <div className="skillContainer">
-        <div className="frontend">
-          <h4>Frontend Developer</h4>
-          <div className="boxContainer">
-         <div className="miniBox">
-          <p>
-            <FaHtml5 /> HTML
-          </p>
-          </div>
+    <section className="skills-section">
+      <h1 className="skills-title">Skills</h1>
 
-          <div className="miniBox">
-          <p>
-          <DiCss3 /> CSS
-          </p>
-          </div>
+      <div className="skills-container">
 
-          <div className="miniBox">
-          <p>
-          <BiLogoJavascript /> Javascript
-          </p>
+        <div className="skill-category">
+          <h3>Frontend Development</h3>
+          <div className="skill-boxes">
+            <div className="skill-box"><FaHtml5 /> HTML</div>
+            <div className="skill-box"><DiCss3 /> CSS</div>
+            <div className="skill-box"><BiLogoJavascript /> JavaScript</div>
+            <div className="skill-box"><RiReactjsFill /> React.js</div>
           </div>
-          
-          <div className="miniBox">
-          <p>
-          <RiReactjsFill /> Reactjs
-          </p>
-          </div>
-          
         </div>
 
+        <div className="skill-category">
+          <h3>Backend Development</h3>
+          <div className="skill-boxes">
+            <div className="skill-box"><RiNodejsLine /> Node.js</div>
+            <div className="skill-box"><SiExpress /> Express.js</div>
+            <div className="skill-box"><GrMysql /> MySQL</div>
+            <div className="skill-box"><SiMongodb /> MongoDB</div>
+          </div>
         </div>
 
-        <div className="frontend">
-          <h4>Backend Developer</h4>
-          <div className="boxContainer">
-
-          <div className="miniBoxs">
-          <p>
-          <RiNodejsLine /> Nodejs
-          </p>
+        <div className="skill-category">
+          <h3>Tools & Deployment</h3>
+          <div className="skill-boxes">
+            <div className="skill-box">GitHub</div>
+            <div className="skill-box">Git</div>
+            <div className="skill-box">Postman</div>
+            <div className="skill-box">Vercel</div>
+            <div className="skill-box">Netlify</div>
+            <div className="skill-box">Render</div>
           </div>
-
-          <div className="miniBoxs">
-          <p>
-          <SiExpress /> Expressjs
-          </p>
-          </div>
-
-          <div className="miniBoxs">
-          <p>
-          <GrMysql /> Firebase
-          </p>
-          </div>
-
-          <div className="miniBoxs">
-          <p>
-          <SiMongodb /> MongoDB
-          </p>
-          </div>
-        
         </div>
+
       </div>
-
-
-              <div className="frontend">
-          <h4>Tools & Deployments </h4>
-          <div className="boxContainer">
-            <div className="miniBoxss">
-          <p>
-           Github
-          </p>
-          </div>
-
-          <div className="miniBoxss">
-          <p>
-           Git 
-          </p>
-          </div>
-
-          <div className="miniBoxss">
-          <p>
-           Postman
-          </p>
-          </div>
-
-          <div className="miniBoxss">
-          <p>
-           Varcel
-          </p>
-          </div>
-
-          <div className="miniBoxss">
-          <p>
-          <SiMongodb /> Netlify
-          </p>
-          </div>
-          <div className="miniBoxss">
-          <p>
-           Render
-          </p>
-          </div>
-         
-        
-        </div>
-      </div>
-      
-      </div>
-  
-    </>
+    </section>
   );
 };
 

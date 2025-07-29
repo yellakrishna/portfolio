@@ -1,121 +1,92 @@
 import React from "react";
 import "./Project.css";
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from "react-icons/fa";
 
 const data = [
-
-
   {
     id: 1,
     imgUrl: "./images/portfolio.png",
     href: "https://portfolio-yella.netlify.app/",
-    name: "HTML , CSS , Javascript , React",
+    name: "HTML, CSS, JavaScript, React",
     head: "Portfolio",
   },
-
-      {
+  {
     id: 2,
     imgUrl: "./images/Screenshot (43).png",
     href: "https://new-blog-4yfp.vercel.app/",
-    name: "   React , Node , Express , MongoDB , CSS   ",
-    head: "Blog App ",
+    name: "React, Node, Express, MongoDB, CSS",
+    head: "Blog App",
   },
-    {
+  {
     id: 3,
     imgUrl: "./images/Screenshot (32).png",
     href: "https://frontend-fish-delivery.vercel.app/",
-    name: "React , Node , Express , MongoDB , Tailwind CSS",
-    head: "Smart Fish Delivery Web App ",
+    name: "React, Node, Express, MongoDB, Tailwind CSS",
+    head: "Smart Fish Delivery Web App",
   },
-
-
   {
     id: 4,
     imgUrl: "./images/Screenshot (38).png",
     href: "https://swift-dashboard-assignment-peach.vercel.app/",
-    name: "HTML , CSS , Javascript , React",
-    head: "swift-dashboard-Assignment",
+    name: "HTML, CSS, JavaScript, React",
+    head: "Swift Dashboard Assignment",
   },
   {
     id: 5,
     imgUrl: "./images/input.png",
     href: "https://user-input-search.netlify.app/",
-    name: "HTML , CSS , Javascript , React",
-    head: "InputSeacher",
+    name: "HTML, CSS, JavaScript, React",
+    head: "Input Search",
   },
   {
     id: 6,
     imgUrl: "./images/calculator.png",
     href: "https://calculator-react123.netlify.app/",
-    name: "HTML , CSS , Javascript ",
+    name: "HTML, CSS, JavaScript",
     head: "Calculator",
   },
-
   {
     id: 7,
     imgUrl: "./images/todolist.png",
     href: "https://yella-todolist.netlify.app/",
-    name: "HTML , CSS , Javascript ",
-    head: "Todolist",
+    name: "HTML, CSS, JavaScript",
+    head: "To-do List",
   },
-    {
+  {
     id: 8,
     imgUrl: "./images/onlineFish.png",
     href: "https://online-fish-market-alampur.netlify.app/",
-    name: "HTML , CSS , Javascript , React",
-    head: "Fishing-Marketing",
+    name: "HTML, CSS, JavaScript, React",
+    head: "Fishing Market",
   },
 ];
 
 const Projects = () => {
   return (
-    <div>
-      <h1
-        style={{
-          textAlign: "center",
-          background: "lightGray",
-          padding: 10,
-          fontFamily: "roboto",
-          fontWeight: "bold",
-          fontVariant: "small-caps",
-        }}
-      >
-        Projects
-      </h1>
-      <ul>
-        {data.map((eachItem) => {
-          const { id, imgUrl, head, name, href } = eachItem;
-          return (
-            <li key={id}>
-              <div>
-                <h5>{head}</h5>
-                <div>
-                  <a href={href}>
-                    <img
-                      src={imgUrl}
-                      alt="fish"
-                      style={{ height: 110, width: 290 }}
-                    />
-                  </a>
-                </div>
-
-                <p>{name}</p>
-                <a href={href}>
-                  <button className="btn btn-info">Live</button>
-                </a>
-                <a
-                  href="https://github.com/yellakrishna"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  
-                  <FaGithub size={30} color="black" />
-                 
-                </a>
-              </div>
-            </li>
-          );
-        })}
+    <div className="full-page">
+      <h1 className="projects-title">My Projects</h1>
+      <ul className="project-list">
+        {data.map(({ id, imgUrl, head, name, href }) => (
+          <li key={id} className="project-card">
+            <h5>{head}</h5>
+            <a href={href} target="_blank" rel="noopener noreferrer">
+              <img src={imgUrl} alt={head} className="project-image" />
+            </a>
+            <p className="tech-stack">{name}</p>
+            <div className="project-links">
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                <button className="btn">Live</button>
+              </a>
+              <a
+                href="https://github.com/yellakrishna"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={28} className="github-icon" />
+              </a>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );

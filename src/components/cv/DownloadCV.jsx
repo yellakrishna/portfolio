@@ -5,7 +5,7 @@ const DownloadCV = () => {
   return (
     <div style={styles.container}>
       <a
-        href="/my-resume.pdf"
+        href="/Yella-Krishna-MERN-Stack-Developer-Resume.pdf"
         download
         target="_blank"
         rel="noopener noreferrer"

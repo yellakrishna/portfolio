@@ -1,33 +1,31 @@
-import React from 'react'
-import './About.css'
-import DownloadCV from '../cv/DownloadCV'
+import React from "react";
+import "./About.css";
+import DownloadCV from "../cv/DownloadCV";
 
 const About = () => {
   return (
-    <>
-    <div className='mt-4 vh-50 about'>
-    <h1 style={{textAlign:"center",background:"lightGray", padding:10,fontFamily:"roboto",fontWeight:"bold",fontVariant:"small-caps"}}>About us</h1>
-   
-    <div className='about-container   '>
-      
-      <div className='imgContainer'>
-        <img src='yella 1.png' alt='aboutImg' className='aboutImg'/>
-      </div>
-      <div className='aboutHeading'>
-      <p>
-     Hi, I'm <strong>Yella Krishna</strong>, a passionate and self-driven Full Stack Developer with strong skills in MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS). I specialize in building responsive, user-friendly web applications and have hands-on experience in real-world project development.
+    <section className="about-section">
+      <div className="about-container">
+        <div className="about-image">
+          <img src="merns.png" alt="Yella Krishna" />
+        </div>
+        <div className="about-text">
+          <h2>Hi, I'm <span>Yella Krishna</span></h2>
+          <p>
+            I’m a <strong>Full Stack Developer</strong> with expertise in the <strong>MERN stack</strong> (MongoDB, Express, React, Node). With a foundation built through hands-on learning, I’ve created real-world projects, explored deep technical concepts, and improved consistently.
+          </p>
+          <p>
+            Even with a career gap, I’ve dedicated my time to self-growth through personal projects, freelancing, and mastering tools like ReactJS, Next.js, Tailwind CSS, Bootstrap, and API integration.
+          </p>
+          <p>
+            My mission is to become a highly impactful developer and use technology to solve real-world challenges. I'm also exploring AI tools and integrations for future-ready applications.
+          </p>
 
-Despite having a career gap, I’ve spent my time consistently improving my skills through personal projects, freelancing, and deep learning in technologies like ReactJS, Next.js, Tailwind CSS, Material UI, and API integration. I believe in learning by doing — most of my learning comes from building projects and solving real-world problems.
-
-My goal is to become a successful software developer, contribute to meaningful projects, and grow in a challenging environment. I’m also exploring AI integrations in web apps to stay ahead in the evolving tech landscape.
-      </p>
-<DownloadCV/>
+          <DownloadCV />
+        </div>
       </div>
-      
-      </div>
-    </div>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default About
+export default About;
