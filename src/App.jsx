@@ -15,6 +15,7 @@ import Register from "./components/register/Register";
 import Footer from "./components/footer/Footer";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./App.css";
+
 function App() {
   return (
     <>

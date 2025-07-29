@@ -5,7 +5,9 @@ import DownloadCV from "../cv/DownloadCV";
 const About = () => {
   return (
     <section className="about-section">
+      
       <div className="about-container">
+        
         <div className="about-image">
           <img src="merns.png" alt="Yella Krishna" />
         </div>

@@ -7,9 +7,8 @@
     margin:8px;
     margin-top: 80px;
     padding-bottom: 160px;
-   width: 100%;
- 
-  padding: 80px 20px;
+    background-color: "#eaf4fc";
+    
   }
   .yellaImg{
     height: 370px;
@@ -91,8 +90,8 @@
     .yellaImg{
       order: 2;
       z-index: -1;
-      height: 270px;
-    width: 350px;
+      height: 220px;
+    width: 280px;
     border-radius: 5%;
     padding: 12px;
     margin-top: 0px;
