@@ -1,52 +1,87 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const closeMenu = () => setMenuOpen(false);
+  // Close menu on route change
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
+
+  // Scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="nav-container">
-      {/* Logo */}
-      <NavLink to="/">
-        <img
-          src="yellakrishna.jpg"
-          alt="logo"
-          className="logo"
-        />
+    <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      {/* Left - Logo */}
+      <NavLink to="/" className="logo">
+        <img src="yellakrishna.jpg" alt="logo" />
+        <span>Yella</span>
       </NavLink>
 
-      {/* Desktop Nav */}
-      <div className="desktop-nav">
-        <NavLink to="/" onClick={closeMenu}>Home</NavLink>
-        <NavLink to="/about" onClick={closeMenu}>About</NavLink>
-        <NavLink to="/skills" onClick={closeMenu}>Skills</NavLink>
-        <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
-        <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+      {/* Center - Desktop Menu */}
+      <nav className="desktop-menu">
+        {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
+          <NavLink
+            key={item}
+            to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            {item}
+          </NavLink>
+        ))}
+      </nav>
+
+      {/* Right - Call to Action */}
+      <div className="cta">
+        <NavLink to="/contact" className="cta-btn">
+          Hire Me
+        </NavLink>
       </div>
 
-      {/* Hamburger Icon */}
-      <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+      {/* Hamburger for Mobile */}
+      <button
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
-      {/* Mobile Slide-In Menu */}
-      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-        <NavLink to="/" onClick={closeMenu}>Home</NavLink>
-        <NavLink to="/about" onClick={closeMenu}>About</NavLink>
-        <NavLink to="/skills" onClick={closeMenu}>Skills</NavLink>
-        <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
-        <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
-      </div>
+      {/* Full-Screen Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
+        {/* Close Button */}
+        <button className="close-btn" onClick={() => setMenuOpen(false)}>
+          ✕
+        </button>
 
-      {/* Dark Overlay */}
-      {menuOpen && <div className="overlay" onClick={closeMenu}></div>}
-    </div>
+        {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
+          <NavLink
+            key={item}
+            to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            {item}
+          </NavLink>
+        ))}
+
+        <NavLink to="/contact" className="cta-btn mobile-cta">
+          Hire Me
+        </NavLink>
+      </div>
+    </header>
   );
 };
 

@@ -1,7 +1,7 @@
 /* Full-page background and center content */
 .full-page {
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 80px 20px;
   background: linear-gradient(to right, #e3f2fd, #ffffff);
   font-family: "Segoe UI", sans-serif;
 }

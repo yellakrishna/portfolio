@@ -1,20 +1,27 @@
-import React from 'react';
-import './Contact.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "./Contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const handle = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    const obj = {
-      name: e.target[0].value,
-      email: e.target[1].value,
-      message: e.target[2].value,
-    };
-
-    console.log(obj);
-
-    e.target.reset(); // Clear all fields
+    emailjs
+      .sendForm(
+        "service_xtdqnnq",  // From EmailJS
+        "template_xk079ur", // From EmailJS
+        e.target,
+        "jBeeQCqxpGK1ulj1f"   // From EmailJS
+      )
+      .then(
+        (result) => {
+          alert("✅ Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          alert("❌ Failed to send message. Try again.");
+        }
+      );
   };
 
   return (
@@ -22,10 +29,10 @@ const Contact = () => {
       <div className="contact-card">
         <h2 className="contact-heading">Contact Me</h2>
 
-        <form onSubmit={handle} className="contact-form">
-          <input type="text" placeholder="Your Name" className="form-input" />
-          <input type="email" placeholder="Your Email" className="form-input" />
-          <textarea placeholder="Your Message" className="form-textarea"></textarea>
+        <form onSubmit={handleSubmit} className="contact-form">
+          <input type="text" name="name" placeholder="Your Name" className="form-input" required />
+          <input type="email" name="email" placeholder="Your Email" className="form-input" required />
+          <textarea name="message" placeholder="Your Message" className="form-textarea" required></textarea>
           <button type="submit" className="form-button">Send Message</button>
         </form>
       </div>

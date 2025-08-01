@@ -8,6 +8,27 @@
   min-height: 100vh;
 }
 
+.about-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #597e1a, #1b659a, #ffcc80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -18,7 +39,7 @@
   border-radius: 20px;
   overflow: hidden;
   padding: 40px;
-  gap: 40px;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {

@@ -1,118 +1,123 @@
-.home-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin:8px;
-    margin-top: 80px;
-    padding-bottom: 160px;
-    background-color: "#eaf4fc";
-    
-  }
-  .yellaImg{
-    height: 370px;
-    width: 400px;
-    border-radius: 5%;
-    
-  }
-  .yellaImg {
-    display: inline-block;
-    animation: up-down 5s ease-in-out infinite;
-  }
-  
-  @keyframes up-down {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-  }
-  /* .heading p{
-    font-size: 20px;
-    color: gray;
-  
-  }
-  .heading span{
-    font-size: 55px;
-    font-variant: small-caps;
-   
-  } */
-
-  .heading{
-  min-height: 60vh;
-  
-  color: rgb(17, 15, 15);
-  
-  padding: 5rem 2rem;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px; /* Slightly smaller */
+  background: #f8fafc; /* Light background */
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
 }
 
-  .heading h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+/* Profile Image with Glowing Ring */
+.profile-img {
+  display: inline-block;
+  padding: 5px;
+  background: linear-gradient(90deg, #1a237e, #6a1b9a, #ffcc80);
+  border-radius: 50%;
 }
 
-.heading span {
-  color: #d815fa;
-  font-style: small-caps;
+.profile-img img {
+  width: 250px; /* Smaller */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  transition: transform 0.3s ease;
 }
-  .button{
-    margin-right: 500px;
-    box-shadow: 5px 0px 10px 5px rgb(104, 86, 86);
-    position: absolute;
-    top: 480px;
-    left: 300px;
+
+.profile-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Gradient Animated Name */
+.gradient-text {
+  background: linear-gradient(90deg, #1a237e, #6a1b9a, #ffcc80);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s ease infinite;
+  font-size: 2.2rem; /* Smaller */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Role */
+.role {
+  color: #c10ba9;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+  font-size: 1.1rem; /* Smaller */
+}
+
+/* Description */
+.hero-text p {
+  max-width: 550px;
+  margin: 0 auto 18px;
+  color: #444;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.social-links a {
+  font-size: 1.4rem; /* Smaller icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Smaller buttons */
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* GitHub */
+.social-links a.github {
+  background-color: #181717;
+}
+.social-links a.github:hover {
+  background-color: #000000;
+}
+
+/* LinkedIn */
+.social-links a.linkedin {
+  background-color: #0a66c2;
+}
+.social-links a.linkedin:hover {
+  background-color: #004182;
+}
+
+/* Instagram */
+.social-links a.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+.social-links a.instagram:hover {
+  filter: brightness(1.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-img img {
+    width: 150px;
+    height: 150px;
   }
-  
-  
-  .social{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
+  .gradient-text {
+    font-size: 1.8rem;
   }
-  
-  @media  screen and (max-width:764px) {
-    .home-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-top: 4px;
-      padding-bottom:7px ;
-      margin: 16px;
-      
-    }
-    .yellaImg{
-      order: 2;
-      z-index: -1;
-      height: 250px;
-    width: 300px;
-    border-radius: 25%;
-    padding: 12px;
-    margin-top: 0px;
-    }
-    .button{
-      display: none;
-    }
-    .heading{
-      padding-left: px;
-    }
-    .social{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      
-    }
+  .role {
+    font-size: 1rem;
   }
-  
-  
-  
-  
-  
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+}
