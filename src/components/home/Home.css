@@ -110,9 +110,11 @@
   .profile-img img {
     width: 230px;
     height: 230px;
+   
   }
   .gradient-text {
     font-size: 1.8rem;
+    
   }
   .role {
     font-size: 1rem;

@@ -31,21 +31,7 @@ const data = [
     name: "HTML, CSS, JavaScript, React",
     head: "Swift Dashboard Assignment",
   },
-  {
-    id: 5,
-    imgUrl: "./images/input.png",
-    href: "https://user-input-search.netlify.app/",
-    name: "HTML, CSS, JavaScript, React",
-    head: "Input Search",
-  },
-  
-  {
-    id: 7,
-    imgUrl: "./images/todolist.png",
-    href: "https://yella-todolist.netlify.app/",
-    name: "HTML, CSS, JavaScript",
-    head: "To-do List",
-  },
+
   
 ];
 
