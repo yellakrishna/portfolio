@@ -5,25 +5,26 @@ import { FaGithub } from "react-icons/fa";
 const data = [
   {
     id: 1,
-    imgUrl: "./images/portfolio.png",
+    imgUrl: "./images/Screenshot (65).png",
     href: "https://portfolio-yella.netlify.app/",
     name: "HTML, CSS, JavaScript, React",
     head: "Portfolio",
   },
   {
     id: 2,
+    imgUrl: "./images/Screenshot (63).png",
+    href: "https://new-online-delivery-frontend.vercel.app",
+    name: "React, Node, Express, MongoDB, Tailwind CSS",
+    head: "Smart Fish Delivery Web App + AI tools",
+  },
+  {
+    id: 3,
     imgUrl: "./images/Screenshot (43).png",
     href: "https://new-blog-4yfp.vercel.app/",
     name: "React, Node, Express, MongoDB, CSS",
     head: "Blog App",
   },
-  {
-    id: 3,
-    imgUrl: "./images/Screenshot (32).png",
-    href: "https://frontend-fish-delivery.vercel.app/",
-    name: "React, Node, Express, MongoDB, Tailwind CSS",
-    head: "Smart Fish Delivery Web App",
-  },
+  
   {
     id: 4,
     imgUrl: "./images/Screenshot (38).png",
