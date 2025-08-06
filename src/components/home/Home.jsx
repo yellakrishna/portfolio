@@ -32,7 +32,7 @@ const Home = () => {
           {/* Social Icons */}
           <div className="social-links">
   <a
-    href="https://github.com/yellakrishna"
+    href=""
     target="_blank"
     rel="noopener noreferrer"
     aria-label="GitHub"

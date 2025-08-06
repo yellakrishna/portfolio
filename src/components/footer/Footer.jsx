@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <p>&copy; {new Date().getFullYear()} Yella Krishna. All rights reserved.</p>
       <div className="socials">
-        <a href="https://github.com/yellakrishna" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/yellakrishna" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:yellakrishna.dev@gmail.com">Email</a>
       </div>
