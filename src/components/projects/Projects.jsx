@@ -53,7 +53,7 @@ const Projects = () => {
                 <button className="btn">Live</button>
               </a>
               <a
-                href="https://github.com/yellakrishna"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
