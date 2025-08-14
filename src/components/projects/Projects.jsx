@@ -12,10 +12,10 @@ const data = [
   },
   {
     id: 2,
-    imgUrl: "./images/Screenshot (63).png",
-    href: "https://new-online-delivery-frontend.vercel.app",
+    imgUrl: "./images/Screenshot (71).png",
+    href: "https://frontend-food-ai.vercel.app/",
     name: "React, Node, Express, MongoDB, Tailwind CSS",
-    head: "Smart Fish Delivery Web App + AI tools",
+    head: "Smart Food Delivery Web App + AI tools",
   },
   {
     id: 3,
